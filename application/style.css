@@ -67,11 +67,11 @@ nav{
 
 .main{
     display: grid;
+    background-image: linear-gradient( to right , #aaaefd , #2b6eed );
 }
 .slide-bar{
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    background-image: linear-gradient( to right , #aaaefd , #2b6eed );
     overflow: hidden;
     margin: auto;
     padding: 0%;
@@ -90,7 +90,6 @@ nav{
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 30px 200px;
 
     & .conteudo-box{
         display: grid;
@@ -144,10 +143,13 @@ nav{
 }
 .nav-manual, .nav-auto{
     position: absolute;
-    width: 100%;
+    width: 80%;
     margin-top: 40%;
     display: flex;
     justify-content: center;
+}
+.nav-manual{
+    z-index: 1;
 }
 .nav-manual .manual-btn, .nav-auto div{
     border: 1px solid black;
@@ -156,8 +158,29 @@ nav{
     cursor: pointer;
     transition: 0.4s;
 }
-.nav-manual .manual-btn:not(:last-child), .nav-auto .auto-btn:not(:last-child){
-    margin-right: 40px;
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 50px;
+}
+.nav-manual .manual-btn:hover, .nav-auto div:hover{
+    background: lightgrey;
+}
+#radio1:checked ~.nav-auto .auto-btn1, #radio2:checked ~.nav-auto .auto-btn2, #radio3:checked ~.nav-auto .auto-btn3, #radio4:checked ~.nav-auto .auto-btn4, #radio5:checked ~.nav-auto .auto-btn5{
+    background: black;
+}
+#radio1:checked ~.primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~.primeiro{
+    margin-left: -20%;
+}
+#radio3:checked ~.primeiro{
+    margin-left: -40%;
+}
+#radio4:checked ~.primeiro{
+    margin-left: -60%;
+}
+#radio5:checked ~.primeiro{
+    margin-left: -80%;
 }
 .teste{
     background-image: url(img/paginadefundo.png);
