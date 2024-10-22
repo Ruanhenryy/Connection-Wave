@@ -1,3 +1,13 @@
+//Loading da pagina
+
+setInterval(() => {
+    loading()
+},3000)
+
+function loading(){
+    document.getElementById('load').style.display = "none";
+    document.getElementsByTagName('header')[0].style.display = 'block'
+}
 //Carrossel principal
 document.querySelector('#radio1').checked = true
 let contador = 1
