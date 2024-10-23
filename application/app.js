@@ -2,13 +2,15 @@
 
 setInterval(() => {
     loading()
-},3000)
+},500)
 
 function loading(){
     document.getElementById('load').style.display = "none";
     document.getElementsByTagName('header')[0].style.display = 'block'
 }
-//Carrossel principal
+
+//Slider principal
+
 document.querySelector('#radio1').checked = true
 let contador = 1
 

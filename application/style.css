@@ -104,7 +104,8 @@ nav{
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
 }
 
-/*Carrossel*/
+/*Slider principal*/
+
 .slide-bar{
     width: 80%;
     height: 100vh;
