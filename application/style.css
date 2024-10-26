@@ -100,7 +100,6 @@ nav{
 
 .main{
     display: grid;
-    gap: 80px;
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
 }
 
@@ -228,7 +227,7 @@ nav{
 }
 
 
-/*CONTEUDO INOVAÇÃO*/
+/*CONTEUDOS*/
 
 .conteiner-content{
     background-color: hsla(0, 0%, 100%, 0.466);
@@ -245,7 +244,6 @@ nav{
     padding-left: 40px;
     display: grid;
     gap: 50px;
-    height: auto;
 }
 .title-content{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -277,6 +275,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin-left: 10%;
+    margin-block: 20vh;
 
     & .valoriza-content{
         display: grid;
@@ -298,4 +297,15 @@ nav{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+
+/*IMAGEM UM MAR DE OPORTUNIDADES*/
+
+.imagem-content-UmMarDeOportunidades{
+    width: 100%;
+    height: auto;
+}
+.imagem-UmMarDeOportunidades{
+    width: 100%;
+    height: 500px;
 }
