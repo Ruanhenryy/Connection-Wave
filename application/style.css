@@ -108,12 +108,14 @@ nav{
     color: #ff9900;
 }
 
-/*MAIN*/
+/*MAIN GERAL*/
 
 .main{
     display: grid;
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
 }
+
+/*MAIN INDEX*/
 
 /*Slider principal*/
 
@@ -363,6 +365,28 @@ nav{
         border-radius: 10px;
         transition: 0.5s;
     }
+}
+
+/*MAIN PROJETO*/
+
+.content-pagina-projeto{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+
+/*MAIN EQUIPE*/
+
+.content-pagina-equipe{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+.content-title-equipe{
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-size: 2em;
+    margin: auto;
 }
 
 /*FOOTER*/
