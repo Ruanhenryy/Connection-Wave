@@ -385,15 +385,15 @@ nav{
     font-family: "Alegreya Sans" , sans-serif;
     background-image: url(img/imagem-inicial-pagina-equipe.png);
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     
     & .title-inicial-pagina-equipe{
         width: 80%;
-        height: 100vh;
+        height: 50vh;
         margin: auto;
         display: grid;
         align-items: center;
-        font-size: 10em;
+        font-size: 8em;
         color: #fff;
     }
 }
