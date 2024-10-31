@@ -378,7 +378,7 @@ nav{
 /*MAIN EQUIPE*/
 
 :root{
-    --title-pagina-equipe: 
+    --title:#adebff;
 }
 
 .conteiner-title-equipe{
@@ -386,6 +386,7 @@ nav{
     background-image: url(img/imagem-inicial-pagina-equipe.png);
     width: 100%;
     height: 50vh;
+    margin-bottom: 100px;
     
     & .title-inicial-pagina-equipe{
         width: 80%;
@@ -399,10 +400,46 @@ nav{
 }
 
 .content-pagina-equipe{
-    width: 80%;
+    background: #00123870;
+    padding: 20px 40px;
+    width: 60%;
+    height: auto;
     margin: auto;
     display: grid;
-    justify-content: center;
+    gap: 100px;
+    border-radius: 30px;
+
+    & .title-representantes-geral-equipe{
+        font-family: "Alegreya Sans" , sans-serif;
+        color: var(--title);
+        font-size: 4em;
+        font-weight: 700;
+    }
+    & .description-colaboradores-pagina-equipe{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-style: oblique;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    & .content-gerentes{
+        width: 100%;
+        display: flex;
+        height: auto;
+
+        & .imagem-gerentes-equipe{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px dashed #66c9ea;
+        }
+        & .nome-gerentes{
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-size: 1.5em;
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
 }
 
 /*FOOTER*/
