@@ -44,7 +44,7 @@
     --cor-fundo-preto-header: #030615;
     --cor-fundo-preto-footer: #030615;
     --title-content: #66c9ea;
-    --title-content-slider: #008ab8;
+    --title-content-slider: #7f7f7f;
 }
 
 /*HEADER*/
@@ -105,7 +105,7 @@ nav{
     transition: 0.5s;
 }
 .linkAtivo{
-    color: #00ff6e;
+    color: #66c9ea;
 }
 
 /*MAIN GERAL*/
@@ -395,12 +395,12 @@ nav{
         display: grid;
         align-items: center;
         font-size: 8em;
-        color: #fff;
+        color: var(--title);
     }
 }
 
 .content-pagina-equipe{
-    background: #00123870;
+    background: #0138af70;
     padding: 20px 40px;
     width: 60%;
     height: auto;
@@ -411,7 +411,7 @@ nav{
 
     & .title-representantes-geral-equipe{
         font-family: "Alegreya Sans" , sans-serif;
-        color: var(--title);
+        color: #fff;
         font-size: 4em;
         font-weight: 700;
     }
@@ -433,11 +433,26 @@ nav{
             border-radius: 50%;
             border: 2px dashed #66c9ea;
         }
+        & .information-gerentes{
+            display: grid;
+            gap: 20px;
+        }
         & .nome-gerentes{
             font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-            font-size: 1.5em;
+            font-size: 2.5em;
+            margin-left: 30px;
             color: #fff;
             text-decoration: underline;
+        }
+        & .description-grupo-atuante{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            margin-inline: 30px;
+            text-align: justify;
+
+            & em{
+                font-weight: 700;
+            }
         }
     }
 }
