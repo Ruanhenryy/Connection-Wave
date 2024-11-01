@@ -386,7 +386,6 @@ nav{
     background-image: url(img/imagem-inicial-pagina-equipe.png);
     width: 100%;
     height: 50vh;
-    margin-bottom: 100px;
     
     & .title-inicial-pagina-equipe{
         width: 80%;
@@ -405,6 +404,7 @@ nav{
     width: 60%;
     height: auto;
     margin: auto;
+    margin-block: 100px;
     display: grid;
     gap: 100px;
     border-radius: 30px;
@@ -428,12 +428,13 @@ nav{
         height: auto;
 
         & .imagem-gerentes-equipe{
-            width: 200px;
+            width: 25%;
             height: 200px;
             border-radius: 50%;
             border: 2px dashed #66c9ea;
         }
         & .information-gerentes{
+            width: 75%;
             display: grid;
             gap: 20px;
         }
@@ -446,6 +447,7 @@ nav{
         }
         & .description-grupo-atuante{
             font-family: Arial, Helvetica, sans-serif;
+            height: auto;
             font-size: 1.5em;
             margin-inline: 30px;
             text-align: justify;
