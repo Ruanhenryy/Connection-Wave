@@ -111,7 +111,7 @@ nav{
 /*MAIN GERAL*/
 
 .main{
-    display: grid;
+    height: 100%;
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
 }
 
@@ -245,17 +245,18 @@ nav{
 
 .conteiner-content{
     background-color: rgb(255, 255, 255);
-    width: 80%;
+    width: 80vw;
     display: flex;
     border-radius: 50px;
     box-shadow: 3px 3px 10px #46464680;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
+    margin: auto;
+    padding: 20px;
+    margin-block: 100px;
 }
 .content{
-    width: 100%;
-    padding-left: 40px;
+    width: 90%;
     display: grid;
     gap: 50px;
 }
@@ -266,6 +267,7 @@ nav{
 }
 
 .description-content{
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     text-align: justify;
@@ -278,9 +280,10 @@ nav{
 /*CONTEUDO CONNECTION WAVE VALORIZA*/
 
 .conteiner-valoriza{
-    width: 80%;
+    width: 80vw;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     border-radius: 50px;
     justify-content: center;
@@ -340,14 +343,13 @@ nav{
 }
 
 /*CONTEUDO FORMULÁRIO*/
-
 .conteiner-formulario{
-    margin-block: 20vh;
+    margin-block: 0;
 }
 .content{
     & .link-formulario{
-    width: 30%;
-    height: 50px;
+    width: 50%;
+    height: 80px;
     }
     & .btn-link-formulario{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -357,7 +359,7 @@ nav{
         cursor: pointer;
         border-radius: 30px 15px 30px 15px;
         width: 100%;
-        height: 50px;
+        height: 80px;
     }
     & .btn-link-formulario:hover{
         background: lightgreen;
@@ -367,14 +369,25 @@ nav{
     }
 }
 
-@media (max-width: 1000px) {
-    .conteiner-content , .conteiner-valoriza , .slide-bar , .nav-list{
-        display: none;
+@media (max-width: 600px) {
+    .slide-bar{
+
+        & .imagem{
+            display: none;
+        }
     }
-    .conteiner-content-mobile{
+    .conteiner-content{
         display: block;
+        margin: auto;
+        width: 100vw;
+        border-radius: 0;
+
+        & .conteiner-imagem{
+            margin-block: 50px;
+        }
     }
 }
+
 
 /*MAIN PROJETO*/
 
@@ -474,7 +487,7 @@ nav{
     background-color: var(--cor-fundo-preto-footer);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    width: 100%;
+    width: 100vw;
     height: 400px;
     display: flex;
     align-items: center;
@@ -497,15 +510,15 @@ nav{
     height: 30%;
     display: grid;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
     & .title-contatos{
         text-align: left;
-        margin-left: 20%;
         margin-bottom: 30px;
+        margin-left: 20%;
     }
     & p{
-        margin-left: 20%;
         text-align: left;
     }
 
@@ -521,5 +534,19 @@ nav{
     }
     & p a{
         text-decoration: underline;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteiner-imagem-footer{
+        display: none;
+    }
+    .conteiner-footer-content{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        display: grid;
     }
 }
