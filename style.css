@@ -367,6 +367,15 @@ nav{
     }
 }
 
+@media (max-width: 400px) {
+    .conteiner-content , .conteiner-valoriza , .slide-bar , .nav-list{
+        display: none;
+    }
+    .conteiner-content-mobile{
+        display: block;
+    }
+}
+
 /*MAIN PROJETO*/
 
 .content-pagina-projeto{
