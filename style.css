@@ -367,7 +367,7 @@ nav{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
     .conteiner-content , .conteiner-valoriza , .slide-bar , .nav-list{
         display: none;
     }
