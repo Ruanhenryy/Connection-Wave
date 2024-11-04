@@ -13,7 +13,6 @@
 @keyframes load{
     to{transform: rotate(360deg);}
 }
-
 .pre{
     z-index: 1000;
     width: 100px;
@@ -442,6 +441,7 @@ nav{
     border-radius: 30px;
     justify-content: center;
     align-items: center;
+    padding-block: 60px;
 
     & .title-representantes-geral-equipe{
         width: 100%;
@@ -502,7 +502,6 @@ nav{
 @media (max-width: 750px) {
     .content-pagina-equipe{
         margin-block: 0;
-        padding-block: 60px;
         width: 100vw;
         border-radius: 0;
 
