@@ -108,10 +108,16 @@ nav{
     color: #66c9ea;
 }
 
+@media (max-width: 750px) {
+    .nav-list{
+        display: none;
+    }
+}
+
 /*MAIN GERAL*/
 
 .main{
-    height: 100%;
+    display: grid;
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
 }
 
@@ -253,7 +259,6 @@ nav{
     align-items: center;
     margin: auto;
     padding: 20px;
-    margin-block: 100px;
 }
 .content{
     width: 90%;
@@ -280,7 +285,7 @@ nav{
 /*CONTEUDO CONNECTION WAVE VALORIZA*/
 
 .conteiner-valoriza{
-    width: 80vw;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -288,7 +293,6 @@ nav{
     border-radius: 50px;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
     margin-block: 20vh;
 
     & .valoriza-content{
@@ -316,7 +320,7 @@ nav{
 /*IMAGEM UM MAR DE OPORTUNIDADES*/
 
 .imagem-content-UmMarDeOportunidades{
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 .imagem-UmMarDeOportunidades{
@@ -344,7 +348,7 @@ nav{
 
 /*CONTEUDO FORMULÁRIO*/
 .conteiner-formulario{
-    margin-block: 0;
+    margin-bottom: 100px;
 }
 .content{
     & .link-formulario{
@@ -369,7 +373,7 @@ nav{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .slide-bar{
 
         & .imagem{
@@ -381,10 +385,17 @@ nav{
         margin: auto;
         width: 100vw;
         border-radius: 0;
+        margin-block: 50px;
 
         & .conteiner-imagem{
             margin-block: 50px;
         }
+    }
+    .conteiner-valoriza{
+        display: grid;
+    }
+    .conteiner-formulario{
+        margin-bottom: 100px;
     }
 }
 
@@ -406,7 +417,7 @@ nav{
 .conteiner-title-equipe{
     font-family: "Alegreya Sans" , sans-serif;
     background-image: url(img/imagem-inicial-pagina-equipe.png);
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     
     & .title-inicial-pagina-equipe{
@@ -415,42 +426,50 @@ nav{
         margin: auto;
         display: grid;
         align-items: center;
-        font-size: 8em;
+        font-size: 10vw;
         color: var(--title);
     }
 }
 
 .content-pagina-equipe{
     background: #0138af70;
-    padding: 20px 40px;
-    width: 60%;
+    width: 60vw;
     height: auto;
     margin: auto;
     margin-block: 100px;
     display: grid;
     gap: 100px;
     border-radius: 30px;
+    justify-content: center;
+    align-items: center;
 
     & .title-representantes-geral-equipe{
+        width: 100%;
         font-family: "Alegreya Sans" , sans-serif;
         color: #fff;
-        font-size: 4em;
+        font-size: 50px;
         font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
     }
     & .description-colaboradores-pagina-equipe{
+        width: 90%;
         font-family: Arial, Helvetica, sans-serif;
         text-align: justify;
         font-style: oblique;
-        font-size: 1.4em;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 100;
+        margin: auto;
     }
     & .content-gerentes{
-        width: 100%;
+        width: 90%;
+        margin: auto;
         display: flex;
         height: auto;
 
+
         & .imagem-gerentes-equipe{
-            width: 25%;
+            width: 200px;
             height: 200px;
             border-radius: 50%;
             border: 2px dashed #66c9ea;
@@ -459,11 +478,11 @@ nav{
             width: 75%;
             display: grid;
             gap: 20px;
+            padding-inline: 10px;
         }
         & .nome-gerentes{
             font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
             font-size: 2.5em;
-            margin-left: 30px;
             color: #fff;
             text-decoration: underline;
         }
@@ -471,7 +490,6 @@ nav{
             font-family: Arial, Helvetica, sans-serif;
             height: auto;
             font-size: 1.5em;
-            margin-inline: 30px;
             text-align: justify;
 
             & em{
@@ -481,6 +499,33 @@ nav{
     }
 }
 
+@media (max-width: 750px) {
+    .content-pagina-equipe{
+        margin-block: 0;
+        padding-block: 60px;
+        width: 100vw;
+        border-radius: 0;
+
+        & .content-gerentes{
+            display: grid;
+            justify-items: center;
+            text-align: center;
+            
+            & .imagem-gerentes-equipe{
+                width: 300px;
+                height: 300px;
+                margin-right: 50px;
+            }
+            & .information-gerentes{
+                width: 100vw;
+                text-align: center;
+            }
+            & .nome-gerentes , .description-grupo-atuante{
+                width: 90%;
+            }
+        }
+    }
+}
 /*FOOTER*/
 
 .footer{
@@ -537,7 +582,7 @@ nav{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .conteiner-imagem-footer{
         display: none;
     }
