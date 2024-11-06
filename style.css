@@ -147,18 +147,22 @@ nav{
     text-align: center;
 
     & .conteudo-box{
+        width: 100%;
+        height: auto;
         display: grid;
         gap: 20px;
-        text-align: left;
+        text-align: justify;
     }
 
     & .box-title{
+        width: 100%;
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
         font-size: 3em;
         color: var(--title-content-slider);
     }
 
     & .box-description{
+        width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5em;
         text-align: justify;
@@ -347,7 +351,7 @@ nav{
 
 /*CONTEUDO FORMULÁRIO*/
 .conteiner-formulario{
-    margin-bottom: 100px;
+    margin-block: 100px;
 }
 .content{
     & .link-formulario{
@@ -374,9 +378,20 @@ nav{
 
 @media (max-width: 750px) {
     .slide-bar{
+        width: 100%;
+        height: auto;
 
-        & .imagem{
+        & .imagem , .nav-manual , .nav-auto{
             display: none;
+        }
+
+        & .conteudo-box{
+            width: 90%;
+            margin-left: 20px;
+        }
+
+        & .box-description{
+            width: 90%;
         }
     }
     .conteiner-content{
