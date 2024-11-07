@@ -49,6 +49,7 @@
 /*HEADER*/
 
 header{
+    width: 100%;
     display: none;
 }
 
@@ -111,11 +112,15 @@ nav{
     .nav-list{
         display: none;
     }
+    .logo-nome{
+        font-size: 22px;
+    }
 }
 
 /*MAIN GERAL*/
 
 .main{
+    width: 100%;
     display: grid;
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
 }
@@ -382,7 +387,7 @@ nav{
     }
     .slide-bar{
         width: 100%;
-        height: auto;
+        height: 90vh;
 
         & .imagem , .nav-manual , .nav-auto{
             display: none;
@@ -392,9 +397,12 @@ nav{
             width: 90%;
             margin-left: 40px;
         }
-
+        & .box-title{
+            font-size: 24px;
+        }
         & .box-description{
             width: 90%;
+            font-size: 20px
         }
         & .conteiner-traco{
             display: none;
@@ -412,8 +420,8 @@ nav{
             margin-block: 50px;
 
             & .imagem{
-                width: 250px;
-                height: 250px;
+                width: 400px;
+                height: 400px;
             }
         }
         & .content{
