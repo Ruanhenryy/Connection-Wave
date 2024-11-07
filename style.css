@@ -107,7 +107,7 @@ nav{
     color: #66c9ea;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .nav-list{
         display: none;
     }
@@ -376,7 +376,7 @@ nav{
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .slide-bar{
         width: 100%;
         height: auto;
@@ -387,22 +387,37 @@ nav{
 
         & .conteudo-box{
             width: 90%;
-            margin-left: 20px;
+            margin-left: 40px;
         }
 
         & .box-description{
             width: 90%;
         }
+        & .conteiner-traco{
+            display: none;
+        }
     }
     .conteiner-content{
         display: block;
+        width: 90vw;
         margin: auto;
-        width: 100vw;
-        border-radius: 0;
+        border-radius: 20px;
         margin-block: 50px;
+        text-align: center;
 
         & .conteiner-imagem{
             margin-block: 50px;
+            text-align: center;
+        }
+        & .content{
+            width: 100%;
+        }
+        & .description-content{
+            width: 100%;
+            font-size: 20px;
+        }
+        & hr{
+            width: 100%;
         }
     }
     .conteiner-valoriza{
@@ -514,7 +529,7 @@ nav{
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .content-pagina-equipe{
         margin-block: 0;
         width: 100vw;
@@ -596,7 +611,7 @@ nav{
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .conteiner-imagem-footer{
         display: none;
     }
