@@ -410,6 +410,11 @@ nav{
 
         & .conteiner-imagem{
             margin-block: 50px;
+
+            & .imagem{
+                width: 250px;
+                height: 250px;
+            }
         }
         & .content{
             width: 100%;
