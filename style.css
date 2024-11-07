@@ -115,6 +115,10 @@ nav{
     .logo-nome{
         font-size: 22px;
     }
+    .letreiro{
+        font-size: 18px;
+        width: 80%;
+    }
 }
 
 /*MAIN GERAL*/
@@ -398,11 +402,11 @@ nav{
             margin-left: 40px;
         }
         & .box-title{
-            font-size: 24px;
+            font-size: 20px;
         }
         & .box-description{
             width: 90%;
-            font-size: 20px
+            font-size: 16px
         }
         & .conteiner-traco{
             display: none;
