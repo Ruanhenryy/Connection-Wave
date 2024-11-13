@@ -127,7 +127,7 @@ nav{
         padding-block: 0px;
 
         & .nav-list-mobile{
-            width: 90%;
+            width: 100%;
             margin: auto;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
