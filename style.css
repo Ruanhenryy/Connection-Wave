@@ -151,6 +151,7 @@ nav{
     width: 100%;
     display: grid;
     background-image: linear-gradient( to right , #aaaffd99 , #2c6fed99 );
+    overflow: hidden;
 }
 
 /*MAIN INDEX*/
@@ -488,12 +489,13 @@ nav{
 }
 
 .conteiner-title-equipe{
-    font-family: "Alegreya Sans" , sans-serif;
     background-image: url(img/imagem-inicial-pagina-equipe.png);
     width: 100vw;
     height: 50vh;
+    overflow: hidden;
     
     & .title-inicial-pagina-equipe{
+        font-family: "Alegreya Sans" , sans-serif;
         width: 80%;
         height: 50vh;
         margin: auto;
@@ -505,6 +507,7 @@ nav{
 }
 
 .content-pagina-equipe{
+    overflow: hidden;
     background: #0138af70;
     width: 60vw;
     height: auto;
