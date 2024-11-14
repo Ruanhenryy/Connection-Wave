@@ -125,7 +125,6 @@ nav{
         width: 100vw;
         height: 50px;
         padding-block: 0px;
-        overflow: hidden;
 
         & .nav-list-mobile{
             width: 100%;
