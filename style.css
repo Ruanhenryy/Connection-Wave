@@ -121,7 +121,7 @@ nav{
         }
     }
     .conteiner-nav-mobile{
-        display: block;
+        display: none;
         width: 90vw;
         height: 50px;
         padding-block: 0px;
@@ -532,7 +532,7 @@ nav{
         text-align: justify;
         font-style: oblique;
         font-size: 24px;
-        font-weight: 100;
+        font-weight: 500;
         margin: auto;
     }
     & .content-gerentes{
