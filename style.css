@@ -121,7 +121,7 @@ nav{
         }
     }
     .conteiner-nav-mobile{
-        display: none;
+        display: block;
         width: 90vw;
         height: 50px;
         padding-block: 0px;
