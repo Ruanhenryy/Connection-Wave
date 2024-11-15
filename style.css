@@ -46,7 +46,7 @@
     --title-content-slider: #7f7f7f;
 }
 
-/*HEADER*/
+/*!!!!!! HEADER !!!!!!*/
 
 header{
     width: 100%;
@@ -145,7 +145,7 @@ nav{
     }
 }
 
-/*MAIN GERAL*/
+/*!!!!!! MAIN GERA !!!!!!*/
 
 .main{
     width: 100%;
@@ -154,7 +154,7 @@ nav{
     overflow: hidden;
 }
 
-/*MAIN INDEX*/
+/*!!!!!! MAIN INDEX !!!!!!*/
 
 /*Slider principal*/
 
@@ -474,7 +474,7 @@ nav{
 }
 
 
-/*MAIN PROJETO*/
+/*!!!!!! MAIN PROJETO !!!!!!*/
 
 .content-pagina-projeto{
     width: 80%;
@@ -482,7 +482,7 @@ nav{
     margin: auto;
 }
 
-/*MAIN EQUIPE*/
+/*!!!!!! MAIN EQUIPE !!!!!!*/
 
 :root{
     --title:#adebff;
@@ -608,7 +608,7 @@ nav{
         }
     }
 }
-/*FOOTER*/
+/*!!!!!! FOOTER !!!!!!*/
 
 .footer{
     background-color: var(--cor-fundo-preto-footer);
@@ -642,6 +642,7 @@ nav{
 
     & .title-contatos{
         text-align: left;
+        font-size: 30px;
         margin-bottom: 30px;
         margin-left: 20%;
     }
