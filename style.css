@@ -80,6 +80,11 @@ nav{
     align-items: center;
     color: #fff;
 
+    & .logo-nav{
+        width: 80px;
+        height: 80px;
+    }
+
     & .nomedaempresa{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
@@ -298,7 +303,7 @@ nav{
     padding: 20px;
 }
 .content{
-    width: 90%;
+    width: 100%;
     display: grid;
     gap: 50px;
 }
@@ -476,10 +481,74 @@ nav{
 
 /*!!!!!! MAIN PROJETO !!!!!!*/
 
-.content-pagina-projeto{
-    width: 80%;
-    height: 500px;
+.conteiner-title-projeto{
+    background-image: url(img/imagem-inicial-pagina-projeto.png);
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    
+    & .title-inicial-pagina-projeto{
+        font-family: "Alegreya Sans" , sans-serif;
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+        display: grid;
+        align-items: center;
+        font-size: 100px;
+        color: var(--title);
+    }
+}
+.conteiner-total-content-projeto{
+    overflow: hidden;
+    width: 70vw;
     margin: auto;
+    margin-block: 100px;
+    display: grid;
+    gap: 10rem;
+    justify-content: center;
+
+    & .conteiner-content-projeto{
+        width: 100%;
+        display: flex;
+    }
+
+    & .content{
+        width: 100%;
+
+        & .title-content-projeto{
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-size: 3em;
+            color: #0800ff;
+            text-shadow: #0077ffbc 2px 3px 4px;
+        }
+        & .sub-title-valores{
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            color: #0800ff;
+            font-size: 1.5em;
+        }
+        & .description-content-projeto{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            text-align: justify;
+        }
+    }
+    & .imagem-content{
+        width: 400px;
+        height: 400px;
+        
+        & .imagens-projeto{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .conteiner-title-projeto{
+        & .title-inicial-pagina-projeto{
+            font-size: 60px;
+        }
+    }
 }
 
 /*!!!!!! MAIN EQUIPE !!!!!!*/
@@ -509,7 +578,7 @@ nav{
 .content-pagina-equipe{
     overflow: hidden;
     background: #0138af70;
-    width: 60vw;
+    width: 70vw;
     height: auto;
     margin: auto;
     margin-block: 100px;
