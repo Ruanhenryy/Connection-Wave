@@ -549,7 +549,6 @@ nav{
 @media (max-width: 650px){
     .conteiner-title-projeto{
         & .title-inicial-pagina-projeto{
-            width: 100%;
             font-size: 15vw;
         }
     }
