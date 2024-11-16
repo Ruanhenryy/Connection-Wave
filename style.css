@@ -496,6 +496,7 @@ nav{
         align-items: center;
         font-size: 100px;
         color: var(--title);
+        text-shadow: #0099ff 5px 5px 5px;
     }
 }
 .conteiner-total-content-projeto{
@@ -549,6 +550,7 @@ nav{
 @media (max-width: 650px){
     .conteiner-title-projeto{
         & .title-inicial-pagina-projeto{
+            width: 100%;
             font-size: 15vw;
         }
     }
@@ -578,7 +580,7 @@ nav{
 /*!!!!!! MAIN EQUIPE !!!!!!*/
 
 :root{
-    --title:#adebff;
+    --title:#e6ff06;
 }
 
 .conteiner-title-equipe{
@@ -596,6 +598,7 @@ nav{
         align-items: center;
         font-size: 100px;
         color: var(--title);
+        text-shadow: #0099ff 5px 5px 5px;
     }
 }
 
@@ -699,6 +702,63 @@ nav{
                 width: 90%;
             }
         }
+    }
+}
+
+/*!!!!!! MAIN CONTATOS !!!!!!*/
+
+.conteiner-title-contato{
+    background-image: url(img/imagem-inicial-pagina-contato.png);
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    
+    & .title-inicial-pagina-contato{
+        font-family: "Alegreya Sans" , sans-serif;
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+        display: grid;
+        align-items: center;
+        font-size: 100px;
+        color: var(--title);
+        text-shadow: #0099ff 5px 5px 5px;
+    }
+}
+.conteiner-total-pagina-contato{
+    overflow: hidden;
+    width: 40vw;
+    margin: auto;
+    margin-block: 100px;
+    display: grid;
+    gap: 10rem;
+    justify-content: center;
+
+    &  .content-contato{
+        width: 100%;
+    }
+    &   .text-contato , p{
+        width: 90%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-style: oblique;
+        font-size: 24px;
+        font-weight: 500;
+        margin: auto;
+    }
+    & .info-contatos{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+
+    }
+    & .icons-contato{
+        font-size: 50px;
+    }
+    & #icon-whatsapp{
+        color: #45ff42;
+    }
+    & a{
+        text-decoration: none;
     }
 }
 /*!!!!!! FOOTER !!!!!!*/
