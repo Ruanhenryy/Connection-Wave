@@ -492,6 +492,7 @@ nav{
         width: 80%;
         height: 50vh;
         margin: auto;
+        margin-left: 20px;
         display: grid;
         align-items: center;
         font-size: 100px;
@@ -580,10 +581,11 @@ nav{
 
         }
        }
-    }
-    .imagem-content{
+       & .imagem-content{
         display: none;
+        }
     }
+    
 }
 
 /*!!!!!! MAIN EQUIPE !!!!!!*/
@@ -727,6 +729,7 @@ nav{
         width: 80%;
         height: 50vh;
         margin: auto;
+        margin-left: 20px;
         display: grid;
         align-items: center;
         font-size: 100px;
