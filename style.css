@@ -55,7 +55,7 @@
     padding-inline: 10px;
 }
 #logo {
-    width: 90px;
+    width: 60px;
     margin: 0;
 }
 #nome-empresa {
@@ -91,7 +91,7 @@
 .nav-mobile-menu{
     display: block;
 }
-.icon{
+.icon-menu{
     color: #fff;
     font-size: 40px;
 }
@@ -103,6 +103,7 @@
         opacity: 1;
     }
     #logo{
+        width: 90px;
         margin-right: 5px;
     }
 }
