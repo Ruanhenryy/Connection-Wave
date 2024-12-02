@@ -56,9 +56,9 @@
 }
 #logo {
     width: 90px;
-    margin-right: 20px;
+    margin: 0;
 }
-#nome-empresa  {
+#nome-empresa {
     color: #fff;
     font-size: 0.8rem;
 }
@@ -68,10 +68,44 @@
     padding: 1rem .8rem;
     margin-right: 20px;
 }
-.nav-link:hover{
+.nav-link:hover {
     color: #fff;
 }
-
+.nav-menu{
+    background-color: #000;
+}
+.nav-mobile{
+    display: none;
+}
+.dropdown-menu{
+    background-color: #030615;
+    text-align: center;
+    width: 100%;
+}
+.dropdown-item:hover{
+    color: #008ab8;
+}
+.opaco{
+    opacity: 0.5;
+}
+.nav-mobile-menu{
+    display: block;
+}
+.icon{
+    color: #fff;
+    font-size: 40px;
+}
+@media (min-width: 1000px) {
+    .nav-mobile{
+        display: none;
+    }
+    .main{
+        opacity: 1;
+    }
+    #logo{
+        margin-right: 5px;
+    }
+}
 /*!!!!!! MAIN GERA !!!!!!*/
 
 .main{
@@ -90,7 +124,6 @@
     height: 100vh;
     overflow: hidden;
     margin: auto;
-    margin-top: 15vh;
     padding: 0%;
     text-align: center;
 }
@@ -112,7 +145,6 @@
         width: 100%;
         height: auto;
         display: grid;
-        gap: 20px;
         text-align: justify;
     }
 
@@ -126,7 +158,7 @@
     & .box-description{
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-align: justify;
     }
     & .saiba-mais{
@@ -339,7 +371,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .total-content{
         overflow-x: hidden;
     }
@@ -480,7 +512,7 @@
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 950px){
     .conteiner-title-projeto{
         & .title-inicial-pagina-projeto{
             width: 100%;
@@ -606,7 +638,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .conteiner-title-equipe{
 
         & .title-inicial-pagina-equipe{
@@ -708,7 +740,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .conteiner-title-contato{
         & .title-inicial-pagina-contato{
             width: 100%;
@@ -777,7 +809,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .conteiner-imagem-footer{
         display: none;
     }
