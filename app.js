@@ -31,7 +31,7 @@ let contador = 1
 
 setInterval(() => {
     proximaImg()
-},8000)
+},1000)
 
 function proximaImg() {
     contador++;
