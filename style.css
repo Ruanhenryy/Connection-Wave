@@ -331,7 +331,7 @@ h1{
 
 @media (max-width: 950px){
     .conteiner-content{
-        display: block;
+        display:grid;
         width: 100vw;
         margin: auto;
         border-radius: 20px;
@@ -347,7 +347,8 @@ h1{
             }
         }
         & .content{
-            width: 100%;
+            width: 85%;
+            margin: auto;
             padding-inline: 20px;
         }
         & .description-content{
@@ -408,7 +409,7 @@ h1{
 
   @media (max-width: 950px){
     .conteiner-valoriza{
-        width: 210%;
+        width: 300%;
         overflow: hidden;
     }
     .valoriza-content{
