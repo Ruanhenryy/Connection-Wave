@@ -136,7 +136,7 @@ h1{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    margin-top: -80px;
+    margin-top: -70px;
 }
 .slide{
     width: 100%;
@@ -214,7 +214,7 @@ h1{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 43%;
+    margin-top: 44%;
     display: flex;
     justify-content: center;
 }
@@ -229,7 +229,7 @@ h1{
     transition: 0.4s;
 }
 .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .nav-manual .manual-btn:hover, .nav-auto div:hover{
     background: rgb(254, 255, 254);
@@ -264,85 +264,28 @@ h1{
 
     .slide-bar{
         width: 100%;
-        height: 100vh;
-        padding-top: 20%;
+        height: 85vh;
+        align-items: center;
+        padding-top: 10rem;
         background-color: #030615;
-
-        & .imagem-box , .nav-manual , .nav-auto{
-            display: none;
-        }
-
-        & .conteudo-box{
-            width: 60%;
-            margin-left: 20px;
-        }
-        & .box-title{
-            font-size: 34px;
-        }
-        & .box-description{
-            width: 90%;
-            font-size: 18px
-        }
-        & .conteiner-traco{
-            display: none;
-        }
     }
-    .carousel-control-prev , .carousel-control-next{
-        height: 85%;
+    .conteiner-traco{
+        display: none;
     }
-    .conteudo-box{
-        width: 100%;
+    .nav-manual, .nav-auto{
+        margin-top: 15em;
     }
-    .slide-content{
-        padding: 0;
-    }
-    /*.carousel-control-prev{
+    .carousel-control-prev{
         display: none;
     }
     .carousel-control-next{
         display: none;
-    }*/
-}
-
-/*ondas*/
-
-.ondas{
-    width: 100vw;
-    background-image: url(img/fundo-ondas-grande.png);
-    background-repeat: no-repeat;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-    margin-top: -30px;
-    z-index: 10;
-}
-.title-futuro-das-redes{
-    width: 80%;
-    margin: auto;
-    text-transform: capitalize;
-    color: #ffae00;
-    font-size: 4rem;
-}
-.svg{
-    width: 100vw;
-}
-.ondas-chegou{
-    color: var(--title);
-}
-
-@media (max-width: 950px){
-    .ondas{
-        background-image: url(img/fundo-ondas-pequeno.png);
-    }
-    .title-futuro-das-redes{
-        font-size: 1.5rem;
     }
 }
 
 /*CONTEUDOS*/
 
 .conteiner-content{
-   /*background-color: rgba(255, 255, 255, 0.932);*/
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -351,9 +294,11 @@ h1{
 }
 .content{
     width: 40%;
+    background-color: rgba(128, 128, 128, 0.500);
+    border-radius: 15px;
+    padding: 20px;
     display: grid;
     margin: 20px 0px;
-
 }
 .title-content{
     background: var(--background-title-content);
@@ -361,7 +306,7 @@ h1{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     border-radius: 50px;
     padding: 10px 40px;
-    margin: 40px 0px;
+    margin-bottom: 40px;
     font-size: 2.5rem;
     color: var(--title-content);
     text-shadow: #000 1px 1px 2px;
@@ -398,14 +343,15 @@ h1{
         & .content{
             width: 100%;
             margin: auto;
+            border-radius: 0px;
+            padding: 0px 0px 30px 0px;
         }
         & .description-content{
             width: 100%;
-            padding-inline: 60px;
+            padding-inline: 1rem;
         }
         & .title-content{
             padding: 10px;
-            margin: 20px 0px;
             border-radius: 0;
         }
         & hr{
@@ -479,6 +425,41 @@ h1{
     }
 }
 
+/*ondas*/
+
+.ondas{
+    width: 100vw;
+    background-image: url(img/fundo-ondas-grande.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    z-index: 10;
+    margin: 50px 0px;
+}
+.title-futuro-das-redes{
+    width: 80%;
+    margin: auto;
+    text-transform: capitalize;
+    color: #ffae00;
+    font-size: 4rem;
+}
+.svg{
+    width: 100vw;
+}
+.ondas-chegou{
+    color: var(--title);
+}
+
+@media (max-width: 950px){
+    .ondas{
+        background-image: url(img/fundo-ondas-pequeno.png);
+    }
+    .title-futuro-das-redes{
+        font-size: 1.5rem;
+    }
+}
+
 /*CONTEUDO DIFERENCIAIS*/
 
 .sub-title-diferenciais{
@@ -491,16 +472,13 @@ h1{
 
 /*CONTEUDO FORMULÁRIO*/
 
-.conteiner-formulario{
-    margin-block: 100px;
-}
 .link-formulario{
 width: 40%;
 height: 50px;
 }
 .btn-formulario{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .btn-formulario:hover{
     opacity: 0.8;
@@ -511,7 +489,7 @@ height: 50px;
         overflow-x: hidden;
     }
     .conteiner-formulario{
-        margin-bottom: 100px;
+        margin: 100px 0px;
     }
     .btn-formulario{
         width: 100%;
